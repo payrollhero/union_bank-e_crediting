@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe UnionBank::ECrediting::EnrollmentFile::HeaderLine do
+describe UnionBank::ECrediting::Common::HeaderLine do
   subject(:line) {
     described_class.new org_short_code: org_short_code,
                         date: date,

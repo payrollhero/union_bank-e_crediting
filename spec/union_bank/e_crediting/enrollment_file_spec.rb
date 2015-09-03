@@ -14,22 +14,22 @@ describe UnionBank::ECrediting::EnrollmentFile do
   let(:details) {
     [
       {
-        payee_id: "1234567890123456",
-        account_number: "1234567890123456",
+        payee_id: "000000000001",
+        account_number: "000000000001",
         account_name: "Person A",
         mobile_number: "888-8888",
         email: "person.a@company.com"
       },
       {
-        payee_id: "2234567890123456",
-        account_number: "2234567890123456",
+        payee_id: "000000000002",
+        account_number: "000000000002",
         account_name: "Person B",
         mobile_number: "888-8888",
         email: "person.b@company.com"
       },
       {
-        payee_id: "3234567890123456",
-        account_number: "3234567890123456",
+        payee_id: "000000000003",
+        account_number: "000000000003",
         account_name: "Person C",
         mobile_number: "888-8888",
         email: "person.c@company.com"
