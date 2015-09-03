@@ -2,6 +2,7 @@ require "csv"
 
 module UnionBank
   module ECrediting
+    # Defines common methods of a pipe delimited file (CSV file with "|" as the column separator).
     module PipeDelimitedFile
       extend ActiveSupport::Concern
 
@@ -10,6 +11,10 @@ module UnionBank
         autoload :DetailLine
       end
 
+      # @param [String] org_short_code
+      # @param [Date] date
+      # @param [Integer] total_no_of_refs
+      # @param [Array] details
       def initialize(org_short_code:, date:, total_no_of_refs: 0, details: [])
         @org_short_code = org_short_code
         @date = date
@@ -28,6 +33,7 @@ module UnionBank
         end
       end
 
+      # @return [UnionBank::ECrediting::Common::HeaderLine]
       def header_line
         @header_line ||= Common::HeaderLine.new org_short_code: org_short_code,
                                                 date: date,

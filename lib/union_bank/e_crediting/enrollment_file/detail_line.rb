@@ -2,6 +2,7 @@ require "active_model"
 
 module UnionBank
   module ECrediting
+    # Describes UnionBank's eCrediting Enrollment File's detail line
     class EnrollmentFile::DetailLine
       include ActiveModel::Model
 
@@ -24,6 +25,11 @@ module UnionBank
                 :email,
                 presence: true
 
+      # @param [String] payee_id
+      # @param [String] account_number
+      # @param [String] account_name
+      # @param [String] mobile_number
+      # @param [String] email
       def initialize(payee_id:, account_number:, account_name:, mobile_number:, email:)
         @payee_id = payee_id
         @account_number = account_number
@@ -34,6 +40,7 @@ module UnionBank
         raise ArgumentError, errors.full_messages.to_sentence unless valid?
       end
 
+      # @return [Array]
       def ordered_field_values
         [
           "D",                  # identifier

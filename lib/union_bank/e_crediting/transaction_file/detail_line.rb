@@ -2,6 +2,7 @@ require "active_model"
 
 module UnionBank
   module ECrediting
+    # Describes UnionBank's eCrediting Transaction File's detail line
     class TransactionFile::DetailLine
       include ActiveModel::Model
 
@@ -21,6 +22,10 @@ module UnionBank
                 :amount,
                 presence: true
 
+      # @param [String] payee_id
+      # @param [Integer] ref_number
+      # @param [BigDecimal] amount
+      # @param [Array] ref_values
       def initialize(payee_id:, ref_number:, amount:, ref_values: [])
         @payee_id = payee_id
         @ref_number = ref_number
@@ -30,6 +35,7 @@ module UnionBank
         raise ArgumentError, errors.full_messages.to_sentence unless valid?
       end
 
+      # @return [Array]
       def ordered_field_values
         [
           "D",                  # identifier
