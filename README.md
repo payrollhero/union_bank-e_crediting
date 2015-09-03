@@ -24,7 +24,32 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+enrollment_file = UnionBank::ECrediting::EnrollmentFile.new org_short_code: "COMPANY-ABC",
+                                                            date: "2010-01-01".to_date,
+                                                            details: [
+                                                              {
+                                                                payee_id: "000000000001",
+                                                                account_number: "000000000001",
+                                                                account_name: "Person A",
+                                                                mobile_number: "888-8888",
+                                                                email: "person.a@company.com"
+                                                              }
+                                                            ]
+
+enrollment_file.content #=> "H|COMPANY-ABC|01012010|0\r\nD|000000000001|000000000001|Person A|888-8888|person.a@company.com\r\n"
+
+transaction_file = UnionBank::ECrediting::TransactionFile.new org_short_code: "COMPANY-ABC",
+                                                              date: "2010-01-01".to_date,
+                                                              details: [
+                                                                {
+                                                                  payee_id: "000000000001",
+                                                                  amount: 123.45
+                                                                }
+                                                              ]
+
+transaction_file.content #=> "H|COMPANY-ABC|01012010|0\r\nD|000000000001|1|000000012345\r\n"
+```
 
 ## Development
 
