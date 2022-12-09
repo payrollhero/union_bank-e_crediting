@@ -6,7 +6,7 @@ module UnionBank
 
       # @return [Array<UnionBank::ECrediting::EnrollmentFile::DetailLine>]
       def detail_lines
-        @detail_lines ||= details.map { |detail| DetailLine.new detail }
+        @detail_lines ||= details.map { |detail| DetailLine.new **detail }
       end
     end
   end
