@@ -41,7 +41,9 @@ module UnionBank
       end
 
       def detail_lines
+        # :nocov:
         raise NotImplementedError, "#{self.class} must implement #detail_lines"
+        # :nocov:
       end
 
       private
