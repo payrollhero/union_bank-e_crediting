@@ -1,7 +1,6 @@
 require "spec_helper"
 
 describe UnionBank::ECrediting::TransactionFile do
-
   subject(:file) do
     described_class.new org_short_code: org_short_code,
                         date: date,
