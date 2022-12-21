@@ -1,13 +1,13 @@
 require "spec_helper"
 
 describe UnionBank::ECrediting::EnrollmentFile::DetailLine do
-  subject(:line) {
+  subject(:line) do
     described_class.new payee_id: payee_id,
                         account_number: account_number,
                         account_name: account_name,
                         mobile_number: mobile_number,
                         email: email
-  }
+  end
 
   let(:payee_id) { "1234567890123456" }
   let(:account_number) { "1234567890123456" }

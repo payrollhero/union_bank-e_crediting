@@ -1,11 +1,11 @@
 require "spec_helper"
 
 describe UnionBank::ECrediting::TransactionFile::DetailLine do
-  subject(:line) {
+  subject(:line) do
     described_class.new payee_id: payee_id,
                         ref_number: ref_number,
                         amount: amount
-  }
+  end
 
   let(:payee_id) { "1234567890123456" }
   let(:ref_number) { 1 }
