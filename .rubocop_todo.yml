@@ -45,13 +45,6 @@ Layout/SpaceAroundOperators:
     - 'spec/union_bank/e_crediting/enrollment_file/detail_line_spec.rb'
     - 'spec/union_bank/e_crediting/transaction_file/detail_line_spec.rb'
 
-# Offense count: 2
-# This cop supports safe autocorrection (--autocorrect).
-Lint/AmbiguousOperator:
-  Exclude:
-    - 'lib/union_bank/e_crediting/enrollment_file.rb'
-    - 'lib/union_bank/e_crediting/transaction_file.rb'
-
 # Offense count: 1
 # Configuration parameters: AllowComments, AllowNil.
 Lint/SuppressedException:
