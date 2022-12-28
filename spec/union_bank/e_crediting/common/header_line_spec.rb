@@ -17,7 +17,7 @@ describe UnionBank::ECrediting::Common::HeaderLine do
     end
 
     describe "invalid org short code" do
-      let(:org_short_code) { "A"*16 }
+      let(:org_short_code) { "A" * 16 }
 
       example { expect { line }.to raise_exception ArgumentError, "Org short code is too long (maximum is 15 characters)" }
     end

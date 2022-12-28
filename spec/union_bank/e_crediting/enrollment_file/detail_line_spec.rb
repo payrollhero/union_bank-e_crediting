@@ -21,7 +21,7 @@ describe UnionBank::ECrediting::EnrollmentFile::DetailLine do
     end
 
     describe "invalid payee ID" do
-      let(:payee_id) { "8"*51 }
+      let(:payee_id) { "8" * 51 }
 
       example { expect { line }.to raise_exception ArgumentError, "Payee is too long (maximum is 50 characters)" }
     end
@@ -33,19 +33,19 @@ describe UnionBank::ECrediting::EnrollmentFile::DetailLine do
     end
 
     describe "invalid account_name" do
-      let(:account_name) { "A"*121 }
+      let(:account_name) { "A" * 121 }
 
       example { expect { line }.to raise_exception ArgumentError, "Account name is too long (maximum is 120 characters)" }
     end
 
     describe "invalid mobile number" do
-      let(:mobile_number) { "8"*14 }
+      let(:mobile_number) { "8" * 14 }
 
       example { expect { line }.to raise_exception ArgumentError, "Mobile number is too long (maximum is 13 characters)" }
     end
 
     describe "invalid email" do
-      let(:email) { "a"*41 }
+      let(:email) { "a" * 41 }
 
       example { expect { line }.to raise_exception ArgumentError, "Email is too long (maximum is 40 characters)" }
     end

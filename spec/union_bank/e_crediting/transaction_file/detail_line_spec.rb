@@ -17,13 +17,13 @@ describe UnionBank::ECrediting::TransactionFile::DetailLine do
     end
 
     describe "invalid payee ID" do
-      let(:payee_id) { "8"*51 }
+      let(:payee_id) { "8" * 51 }
 
       example { expect { line }.to raise_exception ArgumentError, "Payee is too long (maximum is 50 characters)" }
     end
 
     describe "invalid ref number" do
-      let(:ref_number) { "1"*21 }
+      let(:ref_number) { "1" * 21 }
 
       example { expect { line }.to raise_exception ArgumentError, "Ref number is too long (maximum is 20 characters)" }
     end
