@@ -21,11 +21,6 @@ Gemspec/RequiredRubyVersion:
   Exclude:
     - 'union_bank-e_crediting.gemspec'
 
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-Layout/EmptyLineAfterMagicComment:
-  Exclude:
-    - 'union_bank-e_crediting.gemspec'
 
 # Offense count: 7
 # This cop supports safe autocorrection (--autocorrect).
