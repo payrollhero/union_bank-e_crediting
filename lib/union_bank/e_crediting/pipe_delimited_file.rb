@@ -1,4 +1,4 @@
-require "csv"
+require 'csv'
 
 module UnionBank
   module ECrediting
@@ -24,7 +24,7 @@ module UnionBank
 
       # @return [String]
       def content
-        CSV.generate(col_sep: "|", row_sep: "\r\n") do |csv|
+        CSV.generate(col_sep: '|', row_sep: "\r\n") do |csv|
           csv << header_line.ordered_field_values
 
           detail_lines.each do |line|

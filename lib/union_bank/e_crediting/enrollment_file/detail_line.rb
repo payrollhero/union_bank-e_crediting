@@ -1,4 +1,4 @@
-require "active_model"
+require 'active_model'
 
 module UnionBank
   module ECrediting
@@ -43,7 +43,7 @@ module UnionBank
       # @return [Array]
       def ordered_field_values
         [
-          "D",                  # identifier
+          'D',                  # identifier
           payee_id,
           account_number,
           account_name,
