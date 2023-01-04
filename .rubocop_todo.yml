@@ -89,14 +89,6 @@ Style/FormatString:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
-# Offense count: 2
-# This cop supports unsafe autocorrection (--autocorrect-all).
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: literals, strict
-Style/MutableConstant:
-  Exclude:
-    - 'lib/union_bank/e_crediting/transaction_file/detail_line.rb'
-    - 'lib/union_bank/e_crediting/version.rb'
 
 # Offense count: 2
 # This cop supports safe autocorrection (--autocorrect).
