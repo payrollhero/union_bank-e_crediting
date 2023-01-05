@@ -105,11 +105,6 @@ Style/PercentLiteralDelimiters:
   Exclude:
     - 'union_bank-e_crediting.gemspec'
 
-# Offense count: 2
-# This cop supports safe autocorrection (--autocorrect).
-Style/RedundantPercentQ:
-  Exclude:
-    - 'union_bank-e_crediting.gemspec'
 
 # Offense count: 115
 # This cop supports safe autocorrection (--autocorrect).
