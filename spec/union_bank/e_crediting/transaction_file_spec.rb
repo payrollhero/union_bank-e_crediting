@@ -23,7 +23,7 @@ describe UnionBank::ECrediting::TransactionFile do
       {
         payee_id: "000000000002",
         amount: 543.21,
-      },
+      }
     ]
   end
 

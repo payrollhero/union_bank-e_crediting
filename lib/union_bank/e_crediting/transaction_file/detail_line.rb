@@ -41,7 +41,7 @@ module UnionBank
           "D",                  # identifier
           payee_id,
           ref_number,
-          formatted_amount,
+          formatted_amount
         ] + ref_values
       end
 
