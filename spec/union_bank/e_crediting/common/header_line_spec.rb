@@ -17,7 +17,7 @@ describe UnionBank::ECrediting::Common::HeaderLine do
     end
 
     describe "invalid org short code" do
-      let(:org_short_code) { "A"*16 }
+      let(:org_short_code) { "A" * 16 }
 
       example do
         expect do
