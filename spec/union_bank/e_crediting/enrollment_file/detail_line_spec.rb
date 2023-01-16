@@ -29,19 +29,31 @@ describe UnionBank::ECrediting::EnrollmentFile::DetailLine do
     describe "invalid account_number" do
       let(:account_number) { "12345678901234567" }
 
-      example { expect { line }.to raise_exception ArgumentError, "Account number is too long (maximum is 16 characters)" }
+      example do
+        expect do
+          line
+        end.to raise_exception ArgumentError, "Account number is too long (maximum is 16 characters)"
+      end
     end
 
     describe "invalid account_name" do
       let(:account_name) { "A"*121 }
 
-      example { expect { line }.to raise_exception ArgumentError, "Account name is too long (maximum is 120 characters)" }
+      example do
+        expect do
+          line
+        end.to raise_exception ArgumentError, "Account name is too long (maximum is 120 characters)"
+      end
     end
 
     describe "invalid mobile number" do
       let(:mobile_number) { "8"*14 }
 
-      example { expect { line }.to raise_exception ArgumentError, "Mobile number is too long (maximum is 13 characters)" }
+      example do
+        expect do
+          line
+        end.to raise_exception ArgumentError, "Mobile number is too long (maximum is 13 characters)"
+      end
     end
 
     describe "invalid email" do
