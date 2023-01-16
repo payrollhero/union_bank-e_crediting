@@ -19,7 +19,11 @@ describe UnionBank::ECrediting::Common::HeaderLine do
     describe "invalid org short code" do
       let(:org_short_code) { "A"*16 }
 
-      example { expect { line }.to raise_exception ArgumentError, "Org short code is too long (maximum is 15 characters)" }
+      example do
+        expect do
+          line
+        end.to raise_exception ArgumentError, "Org short code is too long (maximum is 15 characters)"
+      end
     end
 
     describe "invalid enroll date" do
@@ -31,7 +35,11 @@ describe UnionBank::ECrediting::Common::HeaderLine do
     describe "invalid total no of refs" do
       let(:total_no_of_refs) { 100 }
 
-      example { expect { line }.to raise_exception ArgumentError, "Total no of refs is too long (maximum is 2 characters)" }
+      example do
+        expect do
+          line
+        end.to raise_exception ArgumentError, "Total no of refs is too long (maximum is 2 characters)"
+      end
     end
   end
 end
