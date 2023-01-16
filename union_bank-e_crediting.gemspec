@@ -1,4 +1,5 @@
 # coding: utf-8
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'union_bank/e_crediting/version'
@@ -9,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Ronald Maravilla"]
   spec.email         = ["rmaravilla@payrollhero.com"]
 
-  spec.summary       = %q{Generates file contents for UnionBank's eCrediting enrollment and transaction files.}
-  spec.description   = %q{Generates file contents for UnionBank's eCrediting enrollment and transaction files.}
+  spec.summary       = "Generates file contents for UnionBank's eCrediting enrollment and transaction files."
+  spec.description   = "Generates file contents for UnionBank's eCrediting enrollment and transaction files."
   spec.homepage      = "https://github.com/payrollhero/union_bank-e_crediting"
   spec.license       = "BSD-3-Clause"
 

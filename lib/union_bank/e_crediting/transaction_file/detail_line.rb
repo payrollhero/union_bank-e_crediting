@@ -6,7 +6,7 @@ module UnionBank
     class TransactionFile::DetailLine
       include ActiveModel::Model
 
-      AMOUNT_RANGE = BigDecimal("0")..BigDecimal("9999999999.99")
+      AMOUNT_RANGE = (BigDecimal("0")..BigDecimal("9999999999.99")).freeze
 
       attr_accessor :payee_id,
                     :ref_number,
@@ -41,7 +41,7 @@ module UnionBank
           "D",                  # identifier
           payee_id,
           ref_number,
-          formatted_amount,
+          formatted_amount
         ] + ref_values
       end
 
