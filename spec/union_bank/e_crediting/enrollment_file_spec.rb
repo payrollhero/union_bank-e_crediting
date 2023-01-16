@@ -32,7 +32,7 @@ describe UnionBank::ECrediting::EnrollmentFile do
         account_name: "Person C",
         mobile_number: "888-8888",
         email: "person.c@company.com"
-      },
+      }
     ]
   end
 
