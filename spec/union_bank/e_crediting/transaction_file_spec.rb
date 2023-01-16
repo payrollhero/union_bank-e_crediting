@@ -14,15 +14,15 @@ describe UnionBank::ECrediting::TransactionFile do
     [
       {
         payee_id: "000000000001",
-        amount: 123.45,
+        amount: 123.45
       },
       {
         payee_id: "000000000002",
-        amount: 678.90,
+        amount: 678.90
       },
       {
         payee_id: "000000000002",
-        amount: 543.21,
+        amount: 543.21
       }
     ]
   end
