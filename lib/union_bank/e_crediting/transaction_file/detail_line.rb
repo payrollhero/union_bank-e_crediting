@@ -48,7 +48,7 @@ module UnionBank
       private
 
       def formatted_amount
-        "%012d" % (amount * BigDecimal("100"))
+        format("%012d", (amount * BigDecimal("100")))
       end
     end
   end
