@@ -34,14 +34,6 @@ Lint/SuppressedException:
 Metrics/BlockLength:
   Max: 49
 
-# Offense count: 2
-# This cop supports unsafe autocorrection (--autocorrect-all).
-# Configuration parameters: EnforcedStyle.
-# SupportedStyles: nested, compact
-Style/ClassAndModuleChildren:
-  Exclude:
-    - 'lib/union_bank/e_crediting/enrollment_file/detail_line.rb'
-    - 'lib/union_bank/e_crediting/transaction_file/detail_line.rb'
 
 # Offense count: 2
 # Configuration parameters: AllowedConstants.
