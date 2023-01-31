@@ -58,12 +58,6 @@ Style/Encoding:
   Exclude:
     - 'union_bank-e_crediting.gemspec'
 
-# Offense count: 2
-# This cop supports safe autocorrection (--autocorrect).
-Style/ExpandPathArguments:
-  Exclude:
-    - 'spec/spec_helper.rb'
-    - 'union_bank-e_crediting.gemspec'
 
 # Offense count: 20
 # This cop supports unsafe autocorrection (--autocorrect-all).
