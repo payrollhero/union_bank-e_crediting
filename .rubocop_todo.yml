@@ -64,25 +64,3 @@ Style/Encoding:
 # SupportedStyles: always, always_true, never
 Style/FrozenStringLiteralComment:
   Enabled: false
-
-# Offense count: 115
-# This cop supports safe autocorrection (--autocorrect).
-# Configuration parameters: EnforcedStyle, ConsistentQuotesInMultiline.
-# SupportedStyles: single_quotes, double_quotes
-Style/StringLiterals:
-  Exclude:
-    - 'Rakefile'
-    - 'bin/console'
-    - 'lib/union_bank/e_crediting.rb'
-    - 'lib/union_bank/e_crediting/common/header_line.rb'
-    - 'lib/union_bank/e_crediting/enrollment_file/detail_line.rb'
-    - 'lib/union_bank/e_crediting/pipe_delimited_file.rb'
-    - 'lib/union_bank/e_crediting/transaction_file.rb'
-    - 'lib/union_bank/e_crediting/transaction_file/detail_line.rb'
-    - 'lib/union_bank/e_crediting/version.rb'
-    - 'spec/union_bank/e_crediting/common/header_line_spec.rb'
-    - 'spec/union_bank/e_crediting/enrollment_file/detail_line_spec.rb'
-    - 'spec/union_bank/e_crediting/enrollment_file_spec.rb'
-    - 'spec/union_bank/e_crediting/transaction_file/detail_line_spec.rb'
-    - 'spec/union_bank/e_crediting/transaction_file_spec.rb'
-    - 'union_bank-e_crediting.gemspec'
