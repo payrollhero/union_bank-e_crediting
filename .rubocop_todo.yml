@@ -51,11 +51,6 @@ Style/Documentation:
     - 'lib/union_bank/e_crediting.rb'
     - 'lib/union_bank/e_crediting/common.rb'
 
-# Offense count: 1
-# This cop supports safe autocorrection (--autocorrect).
-Style/Encoding:
-  Exclude:
-    - 'union_bank-e_crediting.gemspec'
 
 # Offense count: 20
 # This cop supports unsafe autocorrection (--autocorrect-all).
