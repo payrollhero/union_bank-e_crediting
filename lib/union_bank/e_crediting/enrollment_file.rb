@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module UnionBank
   module ECrediting
     # Describes UnionBank's eCrediting Enrollment File

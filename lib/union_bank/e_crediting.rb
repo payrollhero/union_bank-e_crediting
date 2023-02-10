@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "union_bank/e_crediting/version"
 require "bigdecimal"
 require "active_support"
