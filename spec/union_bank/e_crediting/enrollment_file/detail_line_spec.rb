@@ -19,7 +19,7 @@ describe UnionBank::ECrediting::EnrollmentFile::DetailLine do
 
   describe "validations" do
     describe "valid" do
-      example { expect { line }.to_not raise_exception }
+      example { expect { line }.not_to raise_exception }
     end
 
     describe "invalid payee ID" do
