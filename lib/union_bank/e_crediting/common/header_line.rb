@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "active_model"
+require 'active_model'
 
 module UnionBank
   module ECrediting
@@ -31,9 +31,9 @@ module UnionBank
         # @return [Array]
         def ordered_field_values
           [
-            "H", # identifier
+            'H', # identifier
             org_short_code.strip,
-            date.strftime("%m%d%Y"),
+            date.strftime('%m%d%Y'),
             total_no_of_refs
           ]
         end
